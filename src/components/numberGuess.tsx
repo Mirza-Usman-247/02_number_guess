@@ -1,17 +1,8 @@
 "use client";
 import React, { ChangeEvent, useEffect, useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader } from "./ui/card";
+import { Card, CardContent, CardHeader } from "./ui/card";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-
-interface NumberGuessing {
-  gameStarted: boolean;
-  gameOver: boolean;
-  paused: boolean;
-  targetNumber: number;
-  userGuess: number | string;
-  attempts: number;
-}
 
 const NumberGuess = () => {
   const [gameStart, setGameStart] = useState<boolean>(false);
